@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="猫屋季：meow 生活当前这一季。2026 年 11 月 15–18 日，南塘 · 素社小院，和孩子、老师、木工师傅一起搭一间猫屋。这里写清怎么搭、缺什么、走到哪儿了，之后的每一天也记在这里。" />
+    <title>猫屋季 · meow 生活</title>
+    <!-- PWA：可以安装为手机 web app -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#ffc53d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="meow 生活" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <script type="module" crossorigin src="./assets/main-CeAe_cH5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-C7oJJYjR.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-head">
+        <p class="back"><a href="index.html">← 回整点meow活</a></p>
+        <p class="eyebrow">meow 生活 · 当前这一季</p>
+        <h1>猫屋季</h1>
+        <p class="lede">
+          2026 年 11 月 15–18 日，南塘 · 素社小院。和孩子、老师、木工师傅一起，
+          给院子里的猫搭一间过冬的屋。这一页写清三件事：怎么搭、缺什么、走到哪儿了——
+          开工以后的每一天，也记在这里。
+        </p>
+        <p class="season-status" data-season-status>
+          <span class="season-dot" aria-hidden="true"></span>
+          <span data-season-status-text>筹备中</span>
+        </p>
+      </header>
+
+      <!-- 主视觉：猫自己也在帮忙的墨线插画 -->
+      <figure class="season-hero">
+        <svg viewBox="0 0 640 340" role="img" aria-label="手绘插画：几只猫和人一起搭猫屋，呦唬蹲在图纸上监工">
+          <!-- 太阳与云：细线淡墨 -->
+          <g class="ink" fill="none" stroke-width="2">
+            <circle cx="70" cy="58" r="20" />
+            <path d="M70 26v8M70 82v8M38 58h8M94 58h8M48 36l6 6M86 74l6 6M92 36l-6 6M54 74l-6 6" stroke-linecap="round" />
+            <path d="M150 46q10-12 24-6 8-8 18-2" stroke-linecap="round" opacity=".55" />
+            <path d="M480 40q10-12 24-6 8-8 18-2" stroke-linecap="round" opacity=".45" />
+          </g>
+          <!-- 地面 -->
+          <path class="ink-fill" d="M28 288 Q180 279 320 288 T612 285" fill="none" stroke-width="2" stroke-linecap="round" />
+          <!-- 图纸卷轴：铺在草地上，猫爪印盖在上面 -->
+          <g>
+            <rect x="176" y="272" width="150" height="42" rx="6" fill="rgba(125,155,181,0.08)" stroke="#e2d8c3" stroke-width="1.2" />
+            <path d="M196 286h44M196 296h70M252 286h18" stroke="#8d8172" stroke-width="1.2" stroke-linecap="round" opacity=".7" fill="none" />
+            <g fill="#8d8172" opacity=".65">
+              <ellipse cx="302" cy="290" rx="4.6" ry="3.8" />
+              <circle cx="296" cy="283" r="1.9" /><circle cx="302" cy="281" r="1.9" /><circle cx="308" cy="283" r="1.9" />
+            </g>
+          </g>
+          <!-- 没搭完的木框架：立柱、斜梁、屋顶板还差两块 -->
+          <g class="ink" fill="rgba(192,138,94,0.09)" stroke-width="2.2">
+            <path d="M378 180 470 116l92 64" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M390 188v86M548 188v86" stroke-linecap="round" />
+            <path d="M378 274h184" stroke-linecap="round" />
+            <path d="M414 156l30-21M452 133l30-21" stroke-linecap="round" opacity=".8" />
+            <path d="M396 196h168" stroke-linecap="round" opacity=".6" />
+            <path d="M396 232h168" stroke-linecap="round" opacity=".6" />
+          </g>
+          <!-- 屋顶上敲钉子的小猫 -->
+          <g class="ink" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M486 108q2-10 10-8l3-8 6 7q8 1 7 9l-1 8q-1 8-12 8t-12-8z" fill="#fffdf6" />
+            <path d="M496 92l1-3M505 92l1-3" />
+            <path d="M512 96l10-8" />
+            <path d="M522 88l4 2" />
+            <circle cx="499" cy="99" r="1.2" fill="#4a4238" stroke="none" />
+            <circle cx="506" cy="99" r="1.2" fill="#4a4238" stroke="none" />
+          </g>
+          <!-- 扛着木板走向框架的猫 -->
+          <g class="ink" stroke-width="2" fill="#fffdf6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M300 236q-14 2-16 16-1 12 10 16l34 4q14 2 16-10 2-14-10-18z" />
+            <path d="M318 232l6-14 8 10M344 234l8-12 6 12" fill="none" />
+            <circle cx="322" cy="244" r="1.3" fill="#4a4238" stroke="none" />
+            <circle cx="332" cy="244" r="1.3" fill="#4a4238" stroke="none" />
+            <path d="M322 252q5 3 10 0" fill="none" />
+            <path d="M356 240q14-6 12-20" fill="none" />
+          </g>
+          <g stroke="#c08a5e" stroke-width="3" stroke-linecap="round" opacity=".85">
+            <path d="M286 216l64 14" />
+          </g>
+          <!-- 蹲在图纸前监工的呦唬 -->
+          <g class="ink" stroke-width="2" fill="#fffdf6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M138 246q-16 4-14 22 2 16 20 16 20 0 20-18 0-18-16-20z" />
+            <path d="M132 244l-2-16 12 8M156 242l6-14 6 14" fill="none" />
+            <circle cx="140" cy="256" r="1.3" fill="#4a4238" stroke="none" />
+            <circle cx="150" cy="256" r="1.3" fill="#4a4238" stroke="none" />
+            <path d="M141 264q5 3 9 0" fill="none" />
+            <path d="M126 262q-8 1-10 6M126 268q-7 2-8 7" fill="none" opacity=".7" />
+          </g>
+          <!-- 工具箱与颜料罐 -->
+          <g class="ink" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".85">
+            <rect x="212" y="252" width="34" height="22" rx="3" />
+            <path d="M222 252v-5h14v5M212 263h34" />
+            <circle cx="548" cy="266" r="8" />
+            <path d="M544 258v-4h8v4" />
+            <path d="M570 270q4-8 10-2" opacity=".7" />
+          </g>
+          <!-- 爪印小径：从图纸走向框架 -->
+          <g fill="#8d8172" opacity=".5">
+            <ellipse cx="340" cy="292" rx="3.4" ry="2.8" /><circle cx="336" cy="287" r="1.3" /><circle cx="340" cy="285.6" r="1.3" /><circle cx="344" cy="287" r="1.3" />
+            <ellipse cx="364" cy="296" rx="3.4" ry="2.8" /><circle cx="360" cy="291" r="1.3" /><circle cx="364" cy="289.6" r="1.3" /><circle cx="368" cy="291" r="1.3" />
+          </g>
+        </svg>
+        <figcaption>搭屋这件事，猫自己也得出点力。</figcaption>
+      </figure>
+
+      <!-- 01 怎么搭：剖面图 + 分层讲解 -->
+      <section class="season-section" aria-labelledby="how-title">
+        <div class="season-heading">
+          <span class="eyebrow">01 / 一起把窝搭好</span>
+          <h2 id="how-title">猫屋要这样搭</h2>
+          <p>
+            从一块木板到一间能过冬的屋，每一层都为猫多想一步。
+            点选下面四个部位，看看陈老师带着孩子们要一起完成什么。
+          </p>
+        </div>
+
+        <div class="blueprint">
+          <div class="blueprint-card">
+            <div class="blueprint-topline">
+              <span>猫窝剖面图</span>
+              <span class="drawing-stamp">窝窝图鉴 · 01</span>
+            </div>
+            <svg class="nest-diagram" viewBox="0 0 560 400" role="img" aria-labelledby="nest-svg-title nest-svg-desc">
+              <title id="nest-svg-title">四层猫窝结构示意图</title>
+              <desc id="nest-svg-desc">猫窝包含防雨屋顶、保温墙体、避风入口和离地干燥垫层，门洞里有一只猫。</desc>
+              <!-- 地面 -->
+              <path d="M40 320 Q190 311 280 322 T520 318" fill="none" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+              <!-- 屋顶 -->
+              <path class="diagram-part" data-part="roof" d="M118 176 280 64l162 112-16 16L280 92 134 192Z" fill="rgba(217,169,74,0.09)" stroke-width="2.2" stroke-linejoin="round" />
+              <!-- 墙体 -->
+              <path class="diagram-part" data-part="wall" d="M146 196 280 108l134 88v102H146Z" fill="rgba(107,143,122,0.09)" stroke-width="2.2" stroke-linejoin="round" />
+              <!-- 离地垫层 -->
+              <rect class="diagram-part" data-part="floor" x="130" y="296" width="300" height="22" rx="4" fill="rgba(192,138,94,0.09)" stroke-width="2.2" />
+              <!-- 门洞与猫 -->
+              <path class="diagram-part" data-part="door" d="M238 296v-66q0-30 42-30t42 30v66" fill="rgba(196,122,114,0.09)" stroke-width="2.2" />
+              <circle cx="268" cy="252" r="2.6" fill="#4a4238" stroke="none" />
+              <circle cx="292" cy="252" r="2.6" fill="#4a4238" stroke="none" />
+              <path d="M272 262q8 6 16 0m-8 2v7m0 0q-6 5-11 0m11 0q6 5 11 0" fill="none" stroke-width="1.8" stroke-linecap="round" />
+              <!-- 垫被 -->
+              <path d="M186 288q12-16 23-2 11-17 22 0" fill="none" stroke-width="1.8" stroke-linecap="round" opacity=".8" />
+              <!-- 标注引线 -->
+              <g fill="none" stroke-width="1.4" stroke-linecap="round" opacity=".85">
+                <path class="callout" data-part="roof" d="M386 96h76l22-18" />
+                <path class="callout" data-part="wall" d="M392 208h64l22 20" />
+                <path class="callout" data-part="door" d="M318 268h140l26 18" />
+                <path class="callout" data-part="floor" d="M158 308H72l-20-16" />
+              </g>
+              <g fill="#8d8172">
+                <circle class="callout-dot" data-part="roof" cx="386" cy="96" r="3.4" />
+                <circle class="callout-dot" data-part="wall" cx="392" cy="208" r="3.4" />
+                <circle class="callout-dot" data-part="door" cx="318" cy="268" r="3.4" />
+                <circle class="callout-dot" data-part="floor" cx="158" cy="308" r="3.4" />
+              </g>
+              <g font-size="15" fill="#8d8172" font-weight="600">
+                <text x="488" y="82">防雨屋顶</text>
+                <text x="482" y="240">保温墙体</text>
+                <text x="488" y="294">避风入口</text>
+                <text x="30" y="298">离地垫层</text>
+              </g>
+              <!-- 小星星点缀 -->
+              <path d="m78 84 4 8 8 3-8 4-4 8-4-8-8-4 8-3z" fill="none" stroke-width="1.4" opacity=".6" />
+              <path d="m480 52 3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="none" stroke-width="1.4" opacity=".5" />
+            </svg>
+            <div class="diagram-footer">
+              <span>先稳固，再保暖；先避雨，再添软垫。</span>
+              <span class="pencil-note">开工后这里会换上实拍照片 ↓</span>
+            </div>
+          </div>
+
+          <div class="layer-guide">
+            <p class="guide-kicker">选一个部位，读读搭建小提示</p>
+            <div class="layer-tabs" role="tablist" aria-label="猫窝部位">
+              <button class="layer-tab is-active" type="button" role="tab" aria-selected="true" data-layer="roof"><span>01</span> 遮风挡雨</button>
+              <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="wall"><span>02</span> 稳固保暖</button>
+              <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="door"><span>03</span> 入口朝向</button>
+              <button class="layer-tab" type="button" role="tab" aria-selected="false" data-layer="floor"><span>04</span> 离地干燥</button>
+            </div>
+            <article class="layer-detail" aria-live="polite">
+              <span class="detail-icon" data-layer-icon aria-hidden="true">☂</span>
+              <div>
+                <h3 data-layer-title>屋顶先挡雨</h3>
+                <p data-layer-text>选结实、无尖角的材料做斜顶，外层加防水覆盖。屋檐伸出一点，让雨水离入口远一些。</p>
+              </div>
+            </article>
+            <p class="safety-note"><span aria-hidden="true">✳</span> 搭建前和村民确认位置，避开道路、排水沟和容易积水的地方。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 一起集物 -->
+      <section class="season-section" aria-labelledby="gather-title">
+        <div class="season-heading">
+          <span class="eyebrow">02 / 把需要的东西，放进小篮子</span>
+          <h2 id="gather-title">一起集物</h2>
+          <p>
+            猫屋不只木板：猫还要吃饭、还要干净。
+            每份小小的支持都是这一季的一部分——点一下「放进一份」，体验把东西放进收集篮的感觉。
+          </p>
+        </div>
+
+        <p class="demo-ribbon"><span aria-hidden="true">✳</span> 下面数字为页面演示，不代表真实募集；正式行动开始前后由负责人更新为真实数字。</p>
+
+        <div class="resource-list" data-resource-list>
+          <article class="resource-row" data-resource="food">
+            <span class="resource-emoji" aria-hidden="true">🍚</span>
+            <div class="resource-main">
+              <div class="resource-label"><strong>猫粮</strong><span class="tiny-tag">日常能量</span></div>
+              <p>干净完整的猫粮，让巡逻回家的小家伙吃饱一点。</p>
+              <div class="progress-meta"><span><b data-current>4</b> / <span data-goal>12</span> 份（演示）</span><span data-percent>33%</span></div>
+              <div class="progress-track" role="progressbar" aria-label="猫粮收集进度（演示）" aria-valuemin="0" aria-valuemax="12" aria-valuenow="4"><span data-bar style="width: 33%"></span></div>
+            </div>
+            <button class="gather-button" type="button" data-gather>放进一份 <span aria-hidden="true">＋</span></button>
+          </article>
+
+          <article class="resource-row" data-resource="litter">
+            <span class="resource-emoji" aria-hidden="true">🪨</span>
+            <div class="resource-main">
+              <div class="resource-label"><strong>猫砂与垫材</strong><span class="tiny-tag">干燥舒适</span></div>
+              <p>猫砂、旧毛巾或可清洗软垫，帮小窝和小院保持清爽。</p>
+              <div class="progress-meta"><span><b data-current>3</b> / <span data-goal>8</span> 份（演示）</span><span data-percent>38%</span></div>
+              <div class="progress-track" role="progressbar" aria-label="猫砂垫材收集进度（演示）" aria-valuemin="0" aria-valuemax="8" aria-valuenow="3"><span data-bar style="width: 38%"></span></div>
+            </div>
+            <button class="gather-button" type="button" data-gather>放进一份 <span aria-hidden="true">＋</span></button>
+          </article>
+
+          <article class="resource-row" data-resource="wood">
+            <span class="resource-emoji" aria-hidden="true">🪵</span>
+            <div class="resource-main">
+              <div class="resource-label"><strong>木料与板材</strong><span class="tiny-tag">猫屋本体</span></div>
+              <p>木板、木条、旧家具拆下的好料——陈老师看得上的都行。</p>
+              <div class="progress-meta"><span><b data-current>9</b> / <span data-goal>20</span> 块（演示）</span><span data-percent>45%</span></div>
+              <div class="progress-track" role="progressbar" aria-label="木料收集进度（演示）" aria-valuemin="0" aria-valuemax="20" aria-valuenow="9"><span data-bar style="width: 45%"></span></div>
+            </div>
+            <button class="gather-button" type="button" data-gather>放进一份 <span aria-hidden="true">＋</span></button>
+          </article>
+
+          <article class="resource-row" data-resource="paint">
+            <span class="resource-emoji" aria-hidden="true">🎨</span>
+            <div class="resource-main">
+              <div class="resource-label"><strong>丙烯颜料</strong><span class="tiny-tag">彩绘日用</span></div>
+              <p>彩绘日的颜色：外墙彩绘、门牌、小碗上的名字都用它。</p>
+              <div class="progress-meta"><span><b data-current>2</b> / <span data-goal>6</span> 套（演示）</span><span data-percent>33%</span></div>
+              <div class="progress-track" role="progressbar" aria-label="丙烯颜料收集进度（演示）" aria-valuemin="0" aria-valuemax="6" aria-valuenow="2"><span data-bar style="width: 33%"></span></div>
+            </div>
+            <button class="gather-button" type="button" data-gather>放进一份 <span aria-hidden="true">＋</span></button>
+          </article>
+
+          <article class="resource-row" data-resource="hands">
+            <span class="resource-emoji" aria-hidden="true">🧤</span>
+            <div class="resource-main">
+              <div class="resource-label"><strong>一双帮忙的手</strong><span class="tiny-tag">一起动工</span></div>
+              <p>会搬一点、会量尺寸，或者只想来陪猫咪——都算数。</p>
+              <div class="progress-meta"><span><b data-current>2</b> / <span data-goal>6</span> 位（演示）</span><span data-percent>33%</span></div>
+              <div class="progress-track" role="progressbar" aria-label="帮手收集进度（演示）" aria-valuemin="0" aria-valuemax="6" aria-valuenow="2"><span data-bar style="width: 33%"></span></div>
+            </div>
+            <button class="gather-button" type="button" data-gather>记一位窝友 <span aria-hidden="true">＋</span></button>
+          </article>
+        </div>
+
+        <div class="collect-footer">
+          <p>你的行动小篮：<strong data-basket>0</strong> 次本地体验。<span data-basket-msg aria-live="polite">每放进一份，进度条就向前一点点。</span></p>
+        </div>
+      </section>
+
+      <!-- 03 走到哪儿了：里程碑 -->
+      <section class="season-section" aria-labelledby="trail-title">
+        <div class="season-heading">
+          <span class="eyebrow">03 / 从村口到暖窝</span>
+          <h2 id="trail-title">走到哪儿了</h2>
+          <p>
+            一条爪印小路，串起这一季的每一步。进度按日期自动更新：
+            已经走过的脚印是实的，还没到的是虚的。
+          </p>
+        </div>
+
+        <div class="trail">
+          <ol class="milestones" data-milestones>
+            <li>
+              <button class="milestone is-done" type="button" data-milestone data-date="2026-11-07" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/7</time><strong>网站上线</strong><small>基础稿先立起来，欢迎大家一起改</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone data-date="2026-11-09" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/8–9</time><strong>线上决策会</strong><small>集中商量 15 号开工怎么做</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone data-date="2026-11-15" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/15</time><strong>建设日 · 选址与备料</strong><small>孩子＋创新老师＋木工师傅＋猫进场</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone data-date="2026-11-16" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/16</time><strong>搭建日 · 立框架</strong><small>立柱、墙体，把形状立起来</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone data-date="2026-11-17" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/17</time><strong>搭建日 · 盖屋顶</strong><small>防雨屋顶、门洞、离地垫层</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone data-date="2026-11-18" aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>11/18</time><strong>彩绘日 · 画上颜色</strong><small>外墙彩绘、门牌，挂上小铃铛</small></span>
+              </button>
+            </li>
+            <li>
+              <button class="milestone" type="button" data-milestone aria-pressed="false">
+                <span class="milestone-paw" aria-hidden="true">🐾</span>
+                <span class="milestone-text"><time>之后</time><strong>回访 · 猫入住</strong><small>记录使用情况，常回来看看</small></span>
+              </button>
+            </li>
+          </ol>
+          <p class="milestone-detail" data-milestone-detail aria-live="polite">
+            网站已经立起来了。接下来是线上决策会，把开工那几天的分工定下来。
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 每日手记 -->
+      <section class="season-section" aria-labelledby="log-title">
+        <div class="season-heading">
+          <span class="eyebrow">04 / 开工以后，每天记一笔</span>
+          <h2 id="log-title">每日手记</h2>
+          <p>
+            11/15 开工以后，这里每天长出一篇：一张照片、一句当天印象最深的话。
+            下面是版型占位——开工那天，它们会被真实内容换掉。
+          </p>
+        </div>
+
+        <div class="log-grid">
+          <article class="log-card">
+            <div class="log-picture" aria-hidden="true">
+              <span class="log-sun">☼</span><span class="log-cat">🐈</span><span class="log-label">照片位置 01</span>
+            </div>
+            <div class="log-caption">
+              <span class="log-type">建设日现场</span>
+              <h3>第一块木板落地的日子</h3>
+              <p>11/15 的照片和一句话，会记在这里。</p>
+            </div>
+          </article>
+          <article class="log-card">
+            <div class="log-picture" aria-hidden="true">
+              <span class="log-sun">✳</span><span class="log-cat">⌂</span><span class="log-label">照片位置 02</span>
+            </div>
+            <div class="log-caption">
+              <span class="log-type">搭建过程</span>
+              <h3>孩子们的手印留在哪根柱子上</h3>
+              <p>11/16–17 的过程记录，会记在这里。</p>
+            </div>
+          </article>
+          <article class="log-card">
+            <div class="log-picture" aria-hidden="true">
+              <span class="log-sun">☾</span><span class="log-cat">🐾</span><span class="log-label">照片位置 03</span>
+            </div>
+            <div class="log-caption">
+              <span class="log-type">猫进屋瞬间</span>
+              <h3>呦唬什么时候第一次走进去</h3>
+              <p>彩绘完成之后，最想看的就是这一张。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="shape-card log-howto">
+          <h2>想投稿？两种方式</h2>
+          <p>
+            会 GitHub：把照片放进 <code>public/log/</code>，在
+            <code>season.html</code> 的每日手记里加一张卡，提 PR 到 dev 分支。
+            不会 GitHub：直接在仓库开 Issue，贴上照片和想说的话，维护者帮你放上去。
+          </p>
+          <p class="shape-links">
+            <a class="shape-link" href="https://github.com/iMeetingClub/cat-planet-of-nantang/issues">去开 Issue ↗</a>
+            <a class="shape-link" href="index.html">先看看三种参与方式</a>
+          </p>
+        </div>
+      </section>
+
+      <nav class="page-nav" aria-label="相关页面">
+        <a href="index.html">← 回整点meow活</a>
+        <a href="story.html">Meow传：这一切是怎么开始的 →</a>
+        <a href="cats.html">Meow名大噪：认识 14 只猫 →</a>
+      </nav>
+
+      <footer>
+        <p>meow 生活 · 南塘，安徽阜阳</p>
+        <p>本站用 TypeScript + Vite 构建，部署在 Cloudflare Pages。内容在 GitHub 上迭代。</p>
+        <p>
+          欢迎改进：<a href="https://github.com/iMeetingClub/cat-planet-of-nantang/issues">提 Issue ↗</a> 或 <a href="https://github.com/iMeetingClub/cat-planet-of-nantang">发 PR ↗</a>
+        </p>
+        <p class="oneko-note">追着你鼠标跑的小像素猫：开源项目 oneko（adryd325），公有领域。</p>
+      </footer>
+    </main>
+  </body>
+</html>
